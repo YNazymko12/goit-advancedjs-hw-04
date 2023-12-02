@@ -20,6 +20,7 @@ window.addEventListener('scroll', handleScroll);
 
 async function handleSearch(event) {
   event.preventDefault();
+  pageNumber = 1;
   query = event.target.searchQuery.value.trim();
 
   if (!query.trim()) {
